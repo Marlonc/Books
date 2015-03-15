@@ -21,8 +21,8 @@ if($_POST)
   $tipo = $_POST['tipo'];
   $errors = array();
 
-  if(isset($_POST['dni']) && strlen($_POST['dni']) != 8){
-    $errors['dni'][] = 'DNI debe tener 8 digitos y ser numérico';
+  if(isset($_POST['dni']) && strlen($_POST['dni']) != 10){
+    $errors['dni'][] = 'El Codigo debe tener 10 digitos y ser numérico';
   }
   if(isset($_POST['dni']) && strlen($_POST['dni']) != "" && Usuarios::busca($_POST['dni']))
   {

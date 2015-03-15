@@ -1,10 +1,10 @@
 <?php
 session_start();
 //Conexion MySQL
-$DBHost = 'db4free.net';
-$DBUser = 'jorgbot';
-$DBPass = 'mundokzero';
-$DB = 'appbooks';
+$DBHost = 'localhost';
+$DBUser = 'root';
+$DBPass = '';
+$DB = 'books';
 $r = mysql_connect($DBHost, $DBUser, $DBPass);
 if(!$r)
 {

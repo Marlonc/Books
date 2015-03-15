@@ -11,8 +11,8 @@ if ($_POST) {
   $clave = $_POST['clave'];
 
   $errors = array();
-  if(isset($_POST['dni']) && strlen($_POST['dni']) != 8){
-      $errors[] = 'El Codigo debe tener 8 digitos y ser numérico';
+  if(isset($_POST['dni']) && strlen($_POST['dni']) != 10){
+      $errors[] = 'El Codigo debe tener 10 digitos y ser numérico';
     }
     if(isset($_POST['dni']) && Usuarios::busca($_POST['dni']))
     {
