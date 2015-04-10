@@ -177,7 +177,7 @@ $usuario = new Usuario($_SESSION['usuario']['CodUsuario']);
                             console.log(response);
                             $('#listaEditoriales').append(response);
                             $("#listaEditoriales").trigger("chosen:updated");
-                            $('#estado_editorial').html('<div class="alert alert-success">Editorial agregada, cierre la q y verifique en las opciones.</div>');
+                            $('#estado_editorial').html('<div class="alert alert-success">Editorial agregada, cierrela  y verifique en las opciones.</div>');
                         }
                     }
                 });

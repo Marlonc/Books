@@ -8,7 +8,7 @@
     <div class="box-header"><h3 class="box-title">Reportes generales</h3></div>
 </div>
     <?php
-    require_once("clases/Prestamo.php");
+    require_once("clases/prestamo.php");
     ?>
     <div class="row">
         <div class="col-sm-6">

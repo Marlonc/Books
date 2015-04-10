@@ -5,7 +5,7 @@
 <?php 
 if(!($_SESSION['usuario']['tipo'] == 1 || $_SESSION['usuario']['tipo'] == 2))
 {
-  echo '<script language="javascript">window.location.href = "error.php";</script>';
+  echo '<script language="javascript">window.location.href = "../error.php";</script>';
 }
 
 require_once("clases/Libro.php");
@@ -19,7 +19,8 @@ if($_POST)
   $fecha = $_POST['fecha'];
   if(!(isset($_POST['autores']))){
     $errors['autores'][] = "Ingrese autores";
-  }else{
+  }
+  else{
     $autores = $_POST['autores'];
   }
 
@@ -115,7 +116,7 @@ if($_POST)
                 <div class="modal-body">
                   <div class="form-group form-group-sm">
                     <label>Nombre de Autor</label>
-                      <input type="text" class="form-control" placeholder="Ingrese nombre de autor" name="autorAgrega" id="autorAgrega"/>
+                      <input type="text" class="form-control" placeholder="Ingrese nombre de autor" name="autorAgrega" id="autorAgrega" value="<?=(isset($respuesta))? $respuesta:''?>">
                   </div>
                   <div id="estado_autor"></div>
                 </div>

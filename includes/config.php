@@ -4,7 +4,7 @@ session_start();
 $DBHost = 'localhost';
 $DBUser = 'root';
 $DBPass = '';
-$DB = 'books';
+$DB = 'Books';
 $r = mysql_connect($DBHost, $DBUser, $DBPass);
 if(!$r)
 {

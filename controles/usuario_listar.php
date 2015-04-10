@@ -1,7 +1,7 @@
 <?php
 if(!($_SESSION['usuario']['tipo'] == 1 || $_SESSION['usuario']['tipo'] == 2))
 {
-  echo '<script language="javascript">window.location.href = "error.php";</script>';
+  echo '<script language="javascript">window.location.href = "../error.php";</script>';
 }
 require_once("clases/Usuario.php");
 require_once("clases/Paginacion.php");
